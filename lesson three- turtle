@@ -1,0 +1,27 @@
+import turtle
+
+
+def draw_square():
+    window = turtle.Screen()
+    window.bgcolor("DarkRed")
+
+    spot = turtle.Turtle()
+    spot.shape("turtle")
+    spot.color("blue")
+    spot.speed(5)
+    cnt=1
+
+    spot.forward(100)
+    while(cnt<=3):
+        spot.right(90)
+        spot.forward(100)
+        cnt = cnt + 1
+    
+                    
+    spot = turtle.Turtle()
+    spot.shape("arrow")
+    spot.color("blue")
+    spot.circle(100)
+    window.exitonclick()
+
+draw_square()
